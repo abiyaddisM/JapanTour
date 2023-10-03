@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 :root {
-    --main-color: rgba(241, 230, 224, 0.84);
+    --main-color: rgba(241, 230, 224, 0.21);
     --vark:15px;
 }
 *{
@@ -9,13 +9,14 @@
     padding: 0;
     background-color: #f2eee9;
 }
-body{
+html{
     overflow-x: hidden;
 
 }
 header,.mainBody{
     padding: 20px 10%;
 }
+
 li,a{
    font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -141,17 +142,15 @@ button:hover {
     margin: 20px 0 0 0;
 }
 .indent{
-    text-indent: 13px;
-    margin: 10px 0 0 0;
+    text-indent: 5px;
 }
 .topHeader{
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     font-size: 26px;
-    color: #b71f39;
+    color: rgba(112, 51, 57, 0.53);
+
     background-color: transparent;
-    margin: 0 5px;
-    text-decoration: underline rgba(183, 31, 57, 0.25);
 }
 .test p{
     background-color: var(--main-color);
@@ -166,6 +165,7 @@ button:hover {
 
 }
 .secondBody2 div{
+    z-index: 2;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -175,7 +175,7 @@ button:hover {
     width: 20%;
     margin: 0 2%;
     border-radius: 20px;
-    background-color: var(--main-color);
+    background-color: rgba(241, 230, 224, 0.2);
     border: 1px solid rgba(0, 0, 0, 0.09);
     /*box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);*/
 }
@@ -248,8 +248,8 @@ button:hover {
 .contactText{
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    font-size: 30px;
-    color: rgb(227, 158, 168);
+    font-size: 26px;
+    color: rgba(112, 51, 57, 0.53);
     background-color: transparent;
     margin: 0 0 25px 0;
 }
@@ -281,9 +281,10 @@ button:hover {
 .container{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: var(--main-color);
+    background-color: rgba(241, 230, 224, 0.13);
     border: 1px solid rgba(0, 0, 0, 0.09);
     padding: 10px 100px;
     border-radius: 15px;
@@ -322,6 +323,7 @@ footer{
     animation-duration: 1.5s;
     animation-fill-mode: backwards;
     animation-delay: 1.1s;
+
 }
 
 @keyframes anim {
@@ -334,4 +336,25 @@ footer{
         opacity: 100%;
 
     }
+}
+@media only screen and (max-width:768px){
+
+
+}
+
+/* Target the overall scrollbar appearance */
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    height:  0.5rem;
+}
+
+/* Target the scrollbar track (the background) */
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Target the scrollbar thumb (the draggable handle) */
+html::-webkit-scrollbar-thumb {
+    background: #AF243CFF;
+    border-radius: 3rem;
 }
