@@ -3,6 +3,7 @@
     --main-color: rgba(241, 230, 224, 0.21);
     --vark:15px;
 }
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -88,13 +89,13 @@ header a{
 button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.9rem;
     color: #efe8e8;
     margin-left: 9px;
     padding: 9px 25px;
     background: linear-gradient(90deg, #fd6262 0%, #e8b7b7 100%);
     border: none;
-    border-radius: 40px;
+    border-radius: 20px;
     cursor: pointer;
     transition: background 0.2s ease-in-out, transform 0.3s ease-in-out;
 }
@@ -111,7 +112,7 @@ button:hover {
     flex-direction: column;
 }
 .sideBlock{
-    height: 200px;
+    height: 13rem;
     width: 6px;
     border-radius: 20px;
     background-color: rgba(175, 36, 60, 0.55);
@@ -139,7 +140,7 @@ button:hover {
     width: 500px;
     background-color: var(--main-color);
     border-radius: 0 30px 30px 0;
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 20px;
 }
 .indent{
     text-indent: 5px;
@@ -158,24 +159,20 @@ button:hover {
     padding: 5px 0;
 }
 .secondBody2{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,5fr));
+    gap: 2rem;
     width: 100%;
-    height: 300px;
 
 }
 .secondBody2 div{
+    padding:2rem    ;
     z-index: 2;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-
-    width: 20%;
-    margin: 0 2%;
+    text-align: center;
+    /*width: 20%;*/
+    /*margin: 0 20%;*/
     border-radius: 20px;
-    background-color: rgba(241, 230, 224, 0.2);
+    /*background-color: rgba(241, 230, 224, 0.2);*/
     border: 1px solid rgba(0, 0, 0, 0.09);
     /*box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);*/
 }
@@ -199,8 +196,8 @@ button:hover {
      color: rgba(6, 15, 38, 0.59);
      background-color: transparent;
  }
- .secondBody2 a{
-     margin: 35px 0 0 0;
+ .secondBody2 button{
+     margin: 15px 0;
 
  }
 .image{
@@ -219,7 +216,7 @@ button:hover {
     width: 60%;
     height: 60%;
     opacity: 40%;
-    position: absolute;
+    position: fixed;
     background-color: transparent;
     transform: rotateY(180deg)  translateX(-800px) translateY(-500px);
     z-index: 1;
@@ -229,7 +226,7 @@ button:hover {
     width: 60%;
     height: 60%;
     opacity: 30%;
-    position: absolute;
+    position: fixed;
     background-color: transparent;
     transform: rotateZ(-25deg)  translateX(-800px) translateY(-550px);
     z-index: 1;
@@ -237,12 +234,15 @@ button:hover {
 }
 .contact{
     margin: 60px 0;
-    width: fit-content;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /*background-color: #4f0f19;*/
+    background-color: rgba(241, 230, 224, 0.13);
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    padding: 10px 100px;
+    border-radius: 15px;
 }
 
 .contactText{
@@ -262,11 +262,15 @@ button:hover {
 
     border-radius: 10px;
     padding: 16px 19px ;
-    width: 600px;
+    width: 100%;
 
 }
-.contact .inputBox{
+.contact div{
     background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
 }
 .contact textarea{
     all: unset;
@@ -279,14 +283,14 @@ button:hover {
     width: 96%;
 }
 .container{
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(241, 230, 224, 0.13);
     border: 1px solid rgba(0, 0, 0, 0.09);
-    padding: 10px 100px;
+    /*padding: 10px 100px;*/
     border-radius: 15px;
 }
 footer{
