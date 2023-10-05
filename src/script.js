@@ -3,7 +3,7 @@ const button = document.querySelectorAll('button');
 button.forEach(button => {
 
     let i = 0;
-    const maxIterations = 100;
+    const maxIterations = 150;
     const intervalDuration = 0; // 10 milliseconds
     let intervalId;
 
@@ -49,3 +49,5 @@ button.forEach(button => {
     });
 
 });
+
+const scroller = document.querySelectorAll(".slider")

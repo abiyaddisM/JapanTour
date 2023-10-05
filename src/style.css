@@ -164,6 +164,7 @@ button:hover {
     gap: 2rem;
     width: 100%;
 
+    margin-bottom: 60px;
 }
 .secondBody2 div{
     padding:2rem    ;
@@ -361,4 +362,46 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
     background: #AF243CFF;
     border-radius: 3rem;
+}
+
+#slider{
+    width: 100%;
+    /*background-color: #4f0f19;*/
+    z-index: 3;
+    max-width: 2000px;
+    border: 3px solid greenyellow;
+    /*overflow: hidden;*/
+    mask: linear-gradient(90deg, transparent, white 20%,white 80%,transparent);
+    -webkit-mask: linear-gradient(90deg, transparent, white 20%,white 80%,transparent) ;
+
+}
+#inner_scroll{
+    display: flex;
+    gap: 1rem;
+    /*background-color: #050001;*/
+    padding-block: 20px;
+    width: 120%;
+    animation: scroll 20s linear infinite;
+}
+#inner_scroll div{
+    width: 100%;
+    max-width: 700%;
+    /*height: 20rem;*/
+    overflow: hidden;
+    /*position: relative;*/
+
+    /*background-color: transparent;*/
+    border-radius: 20px;
+
+}
+#inner_scroll img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+@keyframes scroll {
+    to{
+        transform: translate(100%);
+    }
 }
